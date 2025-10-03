@@ -8,7 +8,9 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "deploy": "npm run build && npx cdk deploy",
+    "deploy:webapp": "npm run build && npx cdk deploy DeployWebAppStack"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
@@ -20,7 +22,7 @@
     "typescript": "~5.6.3"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.214.0",
+    "aws-cdk-lib": "2.218.0",
     "constructs": "^10.0.0"
   }
 }
